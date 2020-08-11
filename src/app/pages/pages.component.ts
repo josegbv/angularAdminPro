@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { SettingsService } from '../services/settings.service';
+import { SidebarService } from '../services/sidebar.service';
+
+declare function inicio();
 
 @Component({
   selector: 'app-pages',
@@ -6,10 +10,13 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class PagesComponent implements OnInit {
-
-  constructor() { }
+  
+  constructor(private settingsServices:SettingsService) { }
 
   ngOnInit() {
+   inicio();
+   //this.sidebarService.menu;
   }
+
 
 }

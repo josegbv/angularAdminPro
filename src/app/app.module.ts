@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { PaginaNoEncontradaComponent } from './pages/pagina-no-encontrada/pagina-no-encontrada.component';
 
 import { AuthModule } from './auth/auth.module';
+import { SettingsService } from './services/settings.service';
 
 
 
@@ -15,15 +16,14 @@ import { AuthModule } from './auth/auth.module';
   declarations: [
     AppComponent,
     PaginaNoEncontradaComponent,
-   
-   
-    
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    AuthModule
+    AuthModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
